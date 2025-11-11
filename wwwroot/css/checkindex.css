@@ -1,0 +1,146 @@
+﻿.checkins-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.checkins-title {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #1e293b;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.filter-tabs {
+    display: flex;
+    gap: 1rem;
+    background: white;
+    padding: 0.5rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.tab-btn {
+    padding: 0.75rem 1.5rem;
+    border: none;
+    background: transparent;
+    color: #64748b;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+    .tab-btn:hover, .tab-btn.active {
+        background: linear-gradient(135deg, #3b82f6, #2563eb);
+        color: white;
+    }
+
+.checkins-table {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    overflow: hidden;
+}
+
+.table {
+    width: 100%;
+    margin: 0;
+}
+
+    .table thead {
+        background: #f8fafc;
+    }
+
+    .table th {
+        padding: 1rem 1.5rem;
+        font-weight: 600;
+        color: #1e293b;
+        font-size: 0.875rem;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        border-bottom: 2px solid #e2e8f0;
+    }
+
+    .table td {
+        padding: 1rem 1.5rem;
+        color: #64748b;
+        border-bottom: 1px solid #f1f5f9;
+    }
+
+    .table tbody tr {
+        transition: all 0.3s ease;
+    }
+
+        .table tbody tr:hover {
+            background: #f8fafc;
+        }
+
+.visitor-cell {
+    font-weight: 600;
+    color: #1e293b;
+}
+
+.time-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    background: #d1fae5;
+    color: #065f46;
+    border-radius: 8px;
+    font-size: 0.875rem;
+    font-weight: 600;
+}
+
+.duration-badge {
+    padding: 0.35rem 0.875rem;
+    background: #eff6ff;
+    color: #3b82f6;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.active-indicator {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.35rem 0.875rem;
+    background: #d1fae5;
+    color: #065f46;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.active-dot {
+    width: 8px;
+    height: 8px;
+    background: #10b981;
+    border-radius: 50%;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+}
+
+.checkout-badge {
+    padding: 0.35rem 0.875rem;
+    background: #f1f5f9;
+    color: #64748b;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
